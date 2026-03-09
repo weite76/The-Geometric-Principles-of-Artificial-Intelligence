@@ -1,6 +1,6 @@
 import numpy as np
 import random
-
+ 
 class ParallelGeometryModel:
     def __init__(self):
         self.concepts = {}  # {名词: {"type": "A/B/C/D", "vec": np.array}}
