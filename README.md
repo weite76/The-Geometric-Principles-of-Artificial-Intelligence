@@ -1,5 +1,5 @@
 The Geometric Principles of Artificial Intelligence
-Abstract
+Abstract 
 The process of thinking and the essence of knowledge are products of external objects entering the human brain through sensory organs and being processed by thought. By studying the essential structure of knowledge, one can grasp the thinking process of the human brain. After external objects enter the brain through the senses, the brain processes them through thought; that is, the brain projects its own information-processing principles, characteristics, and laws onto those objects. Therefore, as products of brain activity, knowledge necessarily contains and reflects the principles, characteristics, and laws by which the brain processes information. Consequently, through an in-depth study of knowledge, one can grasp the nature of human thinking.
 Keywords: similarity; commonality; parallel lines; universal gravitation
 ________________________________________
