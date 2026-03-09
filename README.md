@@ -6,24 +6,6 @@ MIT License (feel free to fork, modify, discuss)
 Issues / Discussions are open.
 Original paper (Chinese): The-Geometric-Principles-of-Artificial-Intelligence.docx
 
-
-### 步骤3：仓库设置优化（几分钟）
-1. 仓库主页右上角 → Settings
-   - Description：填 `Geometric view on knowledge and cognition for AI: parallel lines, gravitation, four noun types`
-   - Topics：添加这些（点击 Manage topics）：  
-     `geometric-deep-learning` `cognitive-science` `ai-philosophy` `knowledge-representation` `symbolic-ai`
-   - License：如果还没，加一个 MIT License（Settings → General → License）
-2. （可选）加 GitHub Sponsors：如果想，Settings → Sponsorships 开启（即使没人捐，也显得专业）
-
-### 完成后效果
-- 仓库从“纯文本”变成“有理论 + 可运行代码 + 英文摘要 + 关键词”
-- 更容易被搜索到（GitHub 搜索 geometric ai cognition 等）
-- 有人点进去至少能看到 demo 代码和运行结果，增加停留时间和 star 概率
-
-如果你做完后想再优化（比如加一张示意图的描述，或发帖模板），随时告诉我。  
-一步一步来，不用一次完美。  
-休息好再动手，加油！如果中途卡住了，直接贴截图或问题给我。
-
 The Geometric Principles of Artificial Intelligence
 Abstract 
 The process of thinking and the essence of knowledge are products of external objects entering the human brain through sensory organs and being processed by thought. By studying the essential structure of knowledge, one can grasp the thinking process of the human brain. After external objects enter the brain through the senses, the brain processes them through thought; that is, the brain projects its own information-processing principles, characteristics, and laws onto those objects. Therefore, as products of brain activity, knowledge necessarily contains and reflects the principles, characteristics, and laws by which the brain processes information. Consequently, through an in-depth study of knowledge, one can grasp the nature of human thinking.
