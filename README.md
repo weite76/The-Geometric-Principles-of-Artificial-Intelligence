@@ -1,3 +1,32 @@
+# The Geometric Principles of Artificial Intelligence
+
+**What if knowledge has geometry?**  
+A theory proposing that human knowledge and cognition are fundamentally **geometric**: built on **parallel patterns**, **similarity-based gravitation**, and **four types of nouns** (A/B/C/D). This geometric structure may be essential for true understanding in AI.
+
+### Core Ideas (from the paper)
+- Knowledge centers on **nouns**, classified into four types:  
+  - **A**: Concrete static scenes (e.g. grass, egg, pen)  
+  - **B**: Dynamic processes (e.g. running, eating, earthquake)  
+  - **C**: Static abstractions (e.g. size, shape, position)  
+  - **D**: Dynamic abstractions (e.g. force, beauty, harmony)  
+- **Parallel patterns** emerge from commonality/similarity between elements.  
+- **Knowledge gravitation** pulls similar concepts closer, forming higher-level cognition.  
+- True AI intelligence requires replicating this **geometric cognitive infrastructure**, not just statistical correlations.
+
+### v0.1 Runnable Prototype
+Added a simple Python implementation:  
+- 3D vector representations for nouns  
+- Cosine similarity to detect parallel patterns  
+- "Gravity" mechanism to pull similar vectors closer  
+- A `think()` method simulating geometric reasoning on input sentences  
+
+File: [`parallel_geometry_model.py`](parallel_geometry_model.py)
+
+Run it locally (requires numpy):
+```bash
+pip install numpy
+python parallel_geometry_model.py
+
 Keywords / Topics
 geometric-deep-learning, cognitive-science, ai-philosophy, knowledge-representation, symbolic-ai, parallel-patterns, knowledge-gravitation, conceptual-modeling
 License
