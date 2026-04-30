@@ -1,3 +1,17 @@
+## What is this?
+
+A minimal model of cognition based on one idea:
+
+> Intelligence = finding parallel structures between sequences
+
+Instead of using complex models, this approach:
+
+- builds connections between observations
+- scores them by "parallelism" (low crossing + direction consistency)
+- reinforces patterns that repeat across contexts
+
+This repo contains a minimal, runnable definition.
+
 # The Geometric Principles of Artificial Intelligence
 
 **What if knowledge has geometry?**  
