@@ -1,17 +1,46 @@
-## What is this?
+# Parallel Structure Similarity
 
-A minimal model of cognition based on one idea:
+A minimal way to measure similarity between sequences using structure instead of distance.
 
-> Intelligence = finding parallel structures between sequences
+## What does it do?
 
-Instead of using complex models, this approach:
+Given two sequences:
 
-- builds connections between observations
-- scores them by "parallelism" (low crossing + direction consistency)
-- reinforces patterns that repeat across contexts
+- it connects elements
+- tries to align them
+- rewards "parallel structure"
+- penalizes crossings
 
-This repo contains a minimal, runnable definition.
+Result:
 
+> similarity = how parallel the structures are
+
+## Why is this different?
+
+Most methods use distance:
+
+- DTW
+- embeddings
+- vector similarity
+
+This approach:
+
+- ignores distance
+- focuses on structure
+- treats similarity as a mapping problem
+
+## Example intuition
+
+Two sequences are similar if their internal relations do not "cross".
+
+Parallel = similar  
+Crossing = different
+
+## Status
+
+Minimal, experimental idea. Looking for feedback.
+
+## Background (original idea)
 # The Geometric Principles of Artificial Intelligence
 
 **What if knowledge has geometry?**  
