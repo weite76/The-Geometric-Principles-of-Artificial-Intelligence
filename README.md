@@ -1,3 +1,27 @@
+Compared to DTW:
+
+- DTW minimizes distance
+- This method maximizes parallel structure
+
+They may produce different alignments.
+
+## Example
+
+Sequence A:  [1, 2, 3, 4]
+Sequence B:  [2, 3, 4, 5]
+
+Result:
+
+- parallel structure: high
+- crossings: 0
+- similarity score: high
+
+## Looking for feedback
+
+- Is this already known under another name?
+- Is "parallel structure" just a variant of existing alignment methods?
+- Any related work is appreciated.
+
 # Parallel Structure Similarity
 
 A minimal way to measure similarity between sequences using structure instead of distance.
