@@ -20,11 +20,19 @@ Result:
 Sequence A: [1, 2, 3, 4]  
 Sequence B: [2, 3, 4, 5]
 
-Result:
+Alignment:
+1 → 2  
+2 → 3  
+3 → 4  
+4 → 5  
 
-- parallel structure: high
-- crossings: 0
-- similarity score: high
+Metrics:
+parallel_pairs = 4  
+crossings = 0  
+
+Score:
+similarity = 4  
+(normalized = 1.0)
 
 ## Compared to DTW
 
