@@ -1,27 +1,3 @@
-Compared to DTW:
-
-- DTW minimizes distance
-- This method maximizes parallel structure
-
-They may produce different alignments.
-
-## Example
-
-Sequence A:  [1, 2, 3, 4]
-Sequence B:  [2, 3, 4, 5]
-
-Result:
-
-- parallel structure: high
-- crossings: 0
-- similarity score: high
-
-## Looking for feedback
-
-- Is this already known under another name?
-- Is "parallel structure" just a variant of existing alignment methods?
-- Any related work is appreciated.
-
 # Parallel Structure Similarity
 
 A minimal way to measure similarity between sequences using structure instead of distance.
@@ -30,20 +6,38 @@ A minimal way to measure similarity between sequences using structure instead of
 
 Given two sequences:
 
-- it connects elements
-- tries to align them
-- rewards "parallel structure"
-- penalizes crossings
+- build connections between elements
+- align them
+- reward parallel structure
+- penalize crossings
 
 Result:
 
-> similarity = how parallel the structures are
+> similarity = parallelism − crossing_penalty
 
-## Why is this different?
+## Example
 
-Most methods use distance:
+Sequence A: [1, 2, 3, 4]  
+Sequence B: [2, 3, 4, 5]
 
-- DTW
+Result:
+
+- parallel structure: high
+- crossings: 0
+- similarity score: high
+
+## Compared to DTW
+
+- DTW minimizes distance
+- This method maximizes structural parallelism
+
+They may produce different alignments.
+
+## Why this approach?
+
+Most methods use:
+
+- distance (DTW)
 - embeddings
 - vector similarity
 
@@ -53,9 +47,9 @@ This approach:
 - focuses on structure
 - treats similarity as a mapping problem
 
-## Example intuition
+## Intuition
 
-Two sequences are similar if their internal relations do not "cross".
+Two sequences are similar if their internal relations do not cross.
 
 Parallel = similar  
 Crossing = different
@@ -64,8 +58,15 @@ Crossing = different
 
 Minimal, experimental idea. Looking for feedback.
 
+## Looking for feedback
+
+- Is this already known under another name?
+- Is “parallel structure” a variant of existing alignment methods?
+- Any related work is appreciated.
+
 ## Background (original idea)
-# The Geometric Principles of Artificial Intelligence
+
+The Geometric Principles of Artificial Intelligence
 
 **What if knowledge has geometry?**  
 A theory proposing that human knowledge and cognition are fundamentally **geometric**: built on **parallel patterns**, **similarity-based gravitation**, and **four types of nouns** (A/B/C/D). This geometric structure may be essential for true understanding in AI.
