@@ -1,0 +1,45 @@
+Exploring how simple structural alignment may give rise to higher-level concepts.
+
+1.
+
+I am not letting connections be created arbitrarily.
+They are guided by the existing human vocabulary system.
+
+---
+
+2.
+
+For example, the transition from 2D to 3D: I consider this a major abstraction for intelligence.
+I imagine a child moving around a 3D object—up and down, left and right, front and back—observing it from different angles and obtaining a sequence of continuously changing images.
+Through this process, the child forms an intuitive understanding of the 3D object.
+
+I try to guide the model to simulate human vision by changing viewpoints, so that these connections gradually form.
+This evolving trajectory of connections can itself be seen as a kind of image.
+
+---
+
+3.
+
+For quantities, I do not introduce additional algorithms.
+Instead, I provide the model with images: one apple, two apples, two toy cars, etc.
+From these images, the concept of number emerges.
+
+For example, the human eye first sees one apple and associates it with “apple.”
+Then it sees another apple and again associates it with “apple.”
+When seeing two apples together, how does the association work?
+
+In the model, “seeing” is represented by connections.
+Seeing two apples corresponds to two bundles of connections.
+These two bundles of connections form a new image.
+Similarly, there are images formed by two toy cars, two chairs, and so on.
+
+Between these images, parallel structures appear, and from this, the number “2” is abstracted.
+
+---
+
+Finally:
+
+These ideas are not difficult to implement using explicit algorithms.
+The difficulty is to consistently use “parallel connections” as the sole driving mechanism.
+
+Like in humans, I believe the underlying driver is the activity of neurons.
