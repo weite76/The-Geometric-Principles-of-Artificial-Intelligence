@@ -43,3 +43,6 @@ These ideas are not difficult to implement using explicit algorithms.
 The difficulty is to consistently use “parallel connections” as the sole driving mechanism.
 
 Like in humans, I believe the underlying driver is the activity of neurons.
+
+This note focuses on minimal mechanisms.
+Broader cognitive interpretations (e.g. spatial learning, abstraction) are left for future work.
