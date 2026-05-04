@@ -1,0 +1,129 @@
+## **Parallel Connections as a Structural Stability Score over Subgraph Alignments**
+
+```text
+This note defines a minimal, testable scoring function
+for detecting structurally stable patterns across graphs.
+It does not address full entity formation or semantic interpretation.
+```
+
+### 1. Input
+
+We assume a sequence (or set) of graphs:
+
+G = {G₁, G₂, ..., G_T}
+
+Each graph is defined as:
+
+G_t = (V_t, E_t, τ_V, τ_E)
+
+* V_t: set of nodes
+* E_t: set of edges
+* τ_V, τ_E: (optional) node/edge type or label functions
+
+---
+
+### 2. Definition of “Parallel Connections”
+
+Given a candidate subgraph (pattern) P:
+
+For each graph G_t, we compute a set of approximate matches:
+
+M_t(P) = { φ | φ: P → G_t, match(P, G_t, φ) ≤ ε }
+
+Where:
+
+* φ is a mapping (subgraph match / approximate isomorphism)
+* match(·) is a matching cost (e.g., edit distance, label mismatch)
+
+We define:
+
+> **Parallel connections = the collection of mappings {M_t(P)} across graphs**
+
+---
+
+### 3. Structural Stability Score
+
+We define a stability score S(P) as:
+
+S(P) = coverage(P) × consistency(P)
+
+#### 3.1 Coverage
+
+Measures how often pattern P appears across graphs:
+
+coverage(P) = (1 / T) * Σ_t 𝟙(|M_t(P)| > 0)
+
+---
+
+#### 3.2 Consistency
+
+Measures how stable the structural roles are across matches:
+
+consistency(P) = exp( - Var( role-signatures(φ) ) )
+
+Where:
+
+* role-signature(φ): a vector encoding structural roles after mapping
+  (e.g., node types, degrees, relative positions, local topology)
+* Var(·): variance across all matches φ
+
+---
+
+### 4. Output
+
+We return all patterns P with sufficiently high stability:
+
+Output = { (P, S(P)) | S(P) ≥ θ }
+
+These correspond to **structurally stable patterns** across contexts.
+
+---
+
+### 5. Interpretation
+
+* High S(P):
+  Pattern appears across multiple graphs and maintains stable structural roles
+  → candidate relational abstraction
+
+* Low S(P):
+  Either rare or structurally inconsistent
+  → filtered out
+
+---
+
+### 6. Minimal Pseudocode
+
+```python
+def score_pattern(P, graphs):
+    matches = []
+    for G in graphs:
+        Ms = find_matches(P, G, epsilon)
+        if Ms:
+            matches.extend(Ms)
+
+    coverage = len({m.graph_id for m in matches}) / len(graphs)
+
+    signatures = [role_signature(m) for m in matches]
+    consistency = exp(-variance(signatures))
+
+    return coverage * consistency
+```
+
+---
+
+### 7. Positioning
+
+This formulation is closely related to:
+
+* frequent subgraph mining (pattern frequency)
+* subgraph matching / query systems
+* representation consistency across contexts
+
+The distinguishing aspect is:
+
+> **Patterns are evaluated not only by frequency, but by stability of structural roles across contexts.**
+
+```
+
+那就会更容易引起那个人的兴趣。
+```
